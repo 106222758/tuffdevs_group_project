@@ -44,3 +44,4 @@ h1, #subheadertext, legend {
 
 [type="checkbox"]:checked + label {
    background-color: rgb(186, 226, 228);
+}
