@@ -1,7 +1,4 @@
-/*
-last modified 7/4/2026 10:03 PM by sheng yang
 
-*/
 
 h1 {
     color:#2455bd
@@ -26,22 +23,9 @@ h1, #subheadertext, legend {
 }
 
 
-#container{
+.container{
    display: grid;
+
    grid-template-columns: 3, 1fr;
    grid-template-rows: 4, 1fr;
-}
-
-
-[type="checkbox"] + label {
-   border: 1px;
-   padding: 5px;
-   margin: 2.5px;
-   border-color: rgb(13, 72, 76);
-   border-style: solid;
-}
-
-
-[type="checkbox"]:checked + label {
-   background-color: rgb(186, 226, 228);
 }
