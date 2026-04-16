@@ -11,7 +11,7 @@ header {
     color: white
 }
 
-aside {
+aside { /*following the deisign requirements of aside, floating it to the right */
     float: right;
     width: 20%;
     margin: 0 0 1.5rem 1.5rem;
@@ -22,9 +22,98 @@ aside {
     font-size: 0.9rem;
 }
 
-.space {
+.space { /* adds a space in between lines */
     margin-bottom: 0.8rem;
 }
 
+aside ul { /* make sure the tick is aligned properly */
+    padding-left: 1rem;
+}
 
+aside ul li { /*instead of dot, uses tick for list */
+    list-style: '✓ ';
+    padding-left: 0.5rem;
+    
+}
+
+.button { /*apply button styling */
+    display: block;
+    margin-top: 1rem;
+    padding: 0.6rem;
+    border-radius: 8px;
+    background-color: #2A9D8F;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.button:hover { /*turns button a darkher shade after its hovered over */
+    background-color: #21867a;
+}
+
+.job-list { /* make sure job list and aside is aligned properly */
+  overflow: hidden;
+}
+
+.job-card { /* styling for the job card */
+    border: 1px solid #b2d8d8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: #EAF4F4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.job-card:last-of-type { /* make sure the last job card doesn't have a margin at the bottom */
+    margin-bottom: 0;
+}
+
+.job-card .job-desc {
+    margin-bottom: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.job-info { /*use flexbox for styling into columns */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1.4rem;
+}
+
+.job-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-info .label { /* text styling */
+    font-weight: bold;
+    color: #2A9D8F;
+    text-transform: uppercase;
+}
+
+.job-card h2 {
+    color: #2A9D8F;
+}
+
+.job-card h3 {
+    color: #457B9D;
+    text-transform: uppercase;
+}
+
+.job-card ol { /*adding tick and aligning it to match */
+  padding-left: 1.3rem;
+}
+
+.job-card ul {
+    list-style: '✓ ';
+    padding-left: 1.3rem;
+    color: #2A9D8F
+}
+
+.job-card ul li {
+    padding-left: 0.5rem;
+    color: black;
+}
 

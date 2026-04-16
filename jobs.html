@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-</html><head>
+<head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <meta name="description" content="Jobs page to show our available positions at TuffDev Medical">
@@ -12,16 +12,15 @@
  <title>TuffDevs Medical - Jobs Positions Available</title>
 </head>
 
+<!-- embedded css -->
 <style>
-    .jobs-intro {
+    .jobs-intro { 
         text-align: center;
         margin: 40px 0;
     }
-    .jobs-intro p {
-        font-style:italic;
-    }
+   
 </style>
-
+<!-- navigation bar -->
 <body>
     <header class="topbar">
         <div class="brand">
@@ -41,12 +40,12 @@
             <input type="text" placeholder="Search...">
         </div>
     </header>
-</body>
 
+<!-- main section -->
 <main>
     <section class="jobs-intro">
         <h1>Current Job Openings</h1>
-        <p>Join our team and help us expand our digital services team to support online patient platforms, appointment systems, health information websites and much more!</p>
+        <p style="font-style: italic;">Join our team and help us expand our digital services team to support online patient platforms, appointment systems, health information websites and much more!</p>
     </section>
 
     <aside> 
@@ -69,48 +68,8 @@
     <section class="job-list"> <!-- Entire Job list -->
         
         <section class="job-card"> <!-- Job 1 -->
-            <h2>REF: TD001 - Customer Service Representative</h2>
-            <p>Provide real-time support to users via live chat</p>
-            <div class="job-info">
-                <div><span class="label">Salary</span><span class="value">$55,000 - $65,000 AUD</span></div>
-                <div><span class="label">Reporting To</span><span class="value">Customer Service Manager</span></div>
-                <div><span class="label">Employment Type</span><span class="value">Full-time</span></div>
-                <div><span class="label">Location</span><span class="value">Melbourne, Australia (Remote work available)</span></div>
-            </div>
-
-            <h3>Key Responsibilities</h3>
-            <ol>
-                <li>Respond to user enquiries via live chat in a professional and timely manner.</li>
-                <li>Troubleshoot any errors related to accounts, appoinments and site navigation.</li>
-                <li>Maintain records of customer interactions in the CRM system.</li>
-                <li>Maintain personal customer satisfaction ratings.</li>
-            </ol>
-
-            <h3>Requirements</h3>
-            <div class="space">
-                <h4>Essential</h4>
-                <ul>
-                    <li>Fluent in English (written and spoken)</li>
-                    <li>Strong communication skills</li>
-                    <li>Customer service experience</li>
-                    <li>Ability to multitask during chats</li>
-                    <li>Familiarity with CRM systems and helpdesk softwares</li>
-                    <li>Empathetic and patient with users</li>
-                </ul>
-            </div> 
-            <div class="space">
-                <h4>Preferable</h4>
-                <ul>
-                    <li>Experience in healthcare industry</li>
-                    <li>Multilingual</li>
-                    <li>Strong technical skills</li>
-                </ul>
-            </div>
-        </section>
-            
-            <section class="job-card"> <!-- Job 2 -->
-            <h2>REF: TD002 - Full Stack Developer</h2>
-            <p>Design, develop and maintain both frontend and backend components of our web platform and application systems.</p>
+            <h2>REF: TD001 - Full Stack Developer</h2>
+            <p class="job-desc">Design, develop and maintain both frontend and backend components of our web platform and application systems.</p>
             <div class="job-info">
                 <div><span class="label">Salary</span><span class="value">$110,000 - $120,000 AUD</span></div>
                 <div><span class="label">Reporting To</span><span class="value">Lead Software Engineer</span></div>
@@ -147,10 +106,50 @@
                 </ul>
             </div>
         </section>
+            
+            <section class="job-card"> <!-- Job 2 -->
+            <h2>REF: TD002 - Customer Service Representative</h2>
+            <p class="job-desc">Provide real-time support to users via live chat</p>
+            <div class="job-info">
+                <div><span class="label">Salary</span><span class="value">$55,000 - $65,000 AUD</span></div>
+                <div><span class="label">Reporting To</span><span class="value">Customer Service Manager</span></div>
+                <div><span class="label">Employment Type</span><span class="value">Full-time</span></div>
+                <div><span class="label">Location</span><span class="value">Melbourne, Australia (Remote work available)</span></div>
+            </div>
+
+            <h3>Key Responsibilities</h3>
+            <ol>
+                <li>Respond to user enquiries via live chat in a professional and timely manner.</li>
+                <li>Troubleshoot any errors related to accounts, appoinments and site navigation.</li>
+                <li>Maintain records of customer interactions in the CRM system.</li>
+                <li>Maintain personal customer satisfaction ratings.</li>
+            </ol>
+
+            <h3>Requirements</h3>
+            <div class="space">
+                <h4>Essential</h4>
+                <ul>
+                    <li>Fluent in English (written and spoken)</li>
+                    <li>Strong communication skills</li>
+                    <li>Customer service experience</li>
+                    <li>Ability to multitask during chats</li>
+                    <li>Familiarity with CRM systems and helpdesk softwares</li>
+                    <li>Empathetic and patient with users</li>
+                </ul>
+            </div> 
+            <div class="space">
+                <h4>Preferable</h4>
+                <ul>
+                    <li>Experience in healthcare industry</li>
+                    <li>Multilingual</li>
+                    <li>Strong technical skills</li>
+                </ul>
+            </div>
+        </section>
 
         <section class="job-card"> <!-- Job 3 -->
             <h2>REF: TD003 - Content Writer</h2>
-            <p>Create engaging and informative content for our health websites</p>
+            <p class="job-desc">Create engaging and informative content for our health websites</p>
             <div class="job-info">
                 <div><span class="label">Salary</span><span class="value">$90,000 - $100,000 AUD</span></div>
                 <div><span class="label">Reporting To</span><span class="value">Head of Digital Content</span></div>
@@ -172,20 +171,32 @@
                 <ul>
                     <li>Fluent in English (written and spoken)</li>
                     <li>Strong communication skills</li>
-                    <li>Experience in a writing or content role</li>
-                    <li>Proficiency in several programming languages, such as HTML, CSS, JavaScript, PHP, Python etc</li>
-                    <li>Knowledge of database management systems such as MySQL etc</li>
-                    <li>Empathetic, patient and hardworking mindset</li>
+                    <li>Experience in a writing or content creation role</li>
+                    <li>Creative and innovative mindset</li>
+                    <li>Knowledge of health and wellness topics</li>
                 </ul>
             </div> 
             <div class="space">
                 <h4>Preferable</h4>
                 <ul>
-                    <li>Knowledge of cloud platforms such as AWS or Azure</li>
+                    <li>Experience in the medical field</li>
                     <li>Multilingual</li>
-                    <li>Strong technical skills</li>
+                    <li>Strong editorial skills</li>
                 </ul>
             </div>
         </section>
-    </section>
+    </section> <!-- End of Job list -->
 </main>
+<footer class="main-footer">
+       <div class="footer-content">
+        <div class="footer-links">
+            <a href="https://jiralinkhere.a.b/" target="_blank">Jira Project</a>
+            <a href="https://github.com/106222758/tuffdevs_group_project.git" target="_blank">GitHub Repository</a>
+            <a href="mailto:info@tuffdevsmedical.com">info@tuffdevsmedical.com</a>
+        </div>
+        <p class="copyright">&copy; 2026 TuffDev Medical. All Rights Reserved.</p>
+         </div>
+     </footer>
+
+    </body>
+    </html>
