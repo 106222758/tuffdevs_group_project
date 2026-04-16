@@ -41,7 +41,7 @@ aside ul li { /*instead of dot, uses tick for list */
     margin-top: 1rem;
     padding: 0.6rem;
     border-radius: 8px;
-    background-color: #2A9D8F;
+    background-color: #228079;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -49,7 +49,7 @@ aside ul li { /*instead of dot, uses tick for list */
 }
 
 .button:hover { /*turns button a darkher shade after its hovered over */
-    background-color: #21867a;
+    background-color: #124746;
 }
 
 .job-list { /* make sure job list and aside is aligned properly */
@@ -89,12 +89,12 @@ aside ul li { /*instead of dot, uses tick for list */
 
 .job-info .label { /* text styling */
     font-weight: bold;
-    color: #2A9D8F;
+    color: #1A6360;
     text-transform: uppercase;
 }
 
 .job-card h2 {
-    color: #2A9D8F;
+    color: #289589;
 }
 
 .job-card h3 {
