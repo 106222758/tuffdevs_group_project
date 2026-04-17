@@ -1,31 +1,265 @@
+/*
+filename: apply.css
+author: Kyla Solomon
+created: Friday, 10 April 2026
+last modified: Thursday, 16 April 2026
+description: css style file for apply.html
+*/ 
+
+/* Universal selector for the font */
+* { font-family: 'Poppins', sans-serif; }   
+
+/* Navigation Styles */
+.topbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 50px;
+   background-color: darkslategray; 
+   border-bottom: 2px solid darkcyan;
+}
+
+.nav ul {
+   list-style: none;
+   display: flex;
+   gap: 40px;
+   padding: 0;
+   margin: 0;
+}
+
+.nav {
+   margin-left: auto;
+   margin-right: 40px;
+}
+
+.nav a {
+   text-decoration: none;
+   color: bisque;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.search-bar {
+   position: relative;
+   display: flex;
+}
+
+.search-icon {
+   position: absolute;
+   left: 15px;
+   top: 50%;
+   transform: translateY(-50%);
+   color: rgb(117, 96, 71);
+   pointer-events: none;
+}
+
+.search-bar input {
+   border: 2px solid seashell;
+   border-radius: 20px;
+   padding: 10px 15px 10px 40px;
+   width: 200px;
+}
+
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   border: 0;
+}
+
+#search-input {
+   border: 2px solid seashell;
+   border-radius: 20px;
+   padding: 10px 15px 10px 40px;
+   width: 200px;
+}
+
+.brand {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+}
+
+.logoa {
+   height: 30px; 
+   width: auto;
+}
+
+.company-namea {
+   margin: 0; 
+   color: burlywood; 
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 14px; 
+   white-space: nowrap; 
+}
+
+/* Footer Styles */
+.main-footer {
+   background-color: darkslategrey; 
+   color: White;
+   padding: 40px 60px;
+   margin-top: 60px; 
+}
+
+.footer-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+}
+
+.footer-links {
+   display: flex;
+   gap: 50px; 
+}
+
+.footer-links a {
+   color: LightCyan; 
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 14px;
+   border-bottom: 1px solid transparent;
+   transition: 0.3s;
+}
+
+.footer-links a:hover {
+   border-bottom: 1px solid LightCyan;
+   color: White;
+}
+
+.copyright {
+   font-size: 12px;
+   color: rgb(255, 255, 255);
+   margin-top: 10px;
+}
 
 
+/* Heading  Styles */
 h1 {
-    color:#2455bd
+   color:darkgoldenrod;
+   text-align: center;
+   font-size: 2rem;
 }
 
-/* This section of the style.css is for apply.html */
-body .apply.htmlBody {
-   background-color: #F5F5F5;
+#subheading {
+   text-align: center;
+   font-size: 1rem;
 }
 
+header {
+   background-color: #c4d9f8;
+}
+
+.subfield {
+   box-shadow: none;
+}
+
+/* Background and Form Styles */
+body{
+  background-color: #f4f6fb;
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+   max-width: 670px;
+   margin: 0 auto 0;
+   background: #ffffff;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 fieldset {
-   background-color: #F5FEFF;
-   border: 2px solid rgb(13, 72, 76);
-   padding: 10px;
-   margin: 10px;
+   background-color: #ffffff;
+   border: none;
+   border-radius: 2rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 1rem;
+   margin: 1rem;
 }
 
-
-h1, #subheadertext, legend {
-   text-align: center;
+/* Input text data type Styles */
+input[type="text"], .textarea, select {
+   background: #f9fafd;
+   border: 1px solid #d8dde9;
+   padding: 5px 50px 5px 10px;
 }
 
-
-.container{
+/* Name Section styles */
+.name-field {
    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
 
-   grid-template-columns: 3, 1fr;
-   grid-template-rows: 4, 1fr;
+/* Gender Section Styles */
+.GenderList {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   box-shadow: none;
+}
+
+.GenderList label {
+   cursor: pointer;
+}
+
+[type="radio"] {
+   accent-color: #2e6fdb;
+   cursor: pointer;
+}
+
+/* Address Section */
+.AddressDetails {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+/* Contact info section */
+.contactinfo {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+/* Checkbox List Styles for Job Skills */
+.checkbox-list {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   row-gap: 5px;
+   column-gap: 5px;
+}
+
+.checkbox-list label {
+   display: flex;
+   padding: 10px 10px;
+   border: 1.5px solid lightgrey;
+}
+
+.checkbox-list label:hover {
+   background-color: #c4d9f8;
+   border-color: #1a4baa;
+   cursor: pointer;
+}
+
+.checkbox-list [type="checkbox"]{
+   accent-color: #2e6fdb;
+   cursor: pointer;
+}
+
+/* Submit and Reset Button Stylea */
+#SRButtons {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 10px;
+   cursor: pointer;
+}
+
+[type="reset"], [type="submit"] {
+   border: .5px solid;
+   padding: 10px 10px;
+   background-color: rgb(210, 241, 241);
+   cursor: pointer;
 }
