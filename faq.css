@@ -1,126 +1,10 @@
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    background-color: darkslategrey; 
-    border-bottom: 2px solid darkcyan;
-}
-
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav {
-    margin-left: auto;
-    margin-right: 40px;
-}
-
-.nav a {
-    text-decoration: none;
-    color: bisque;
-    font-weight: bold;
-    text-transform: uppercase;
-''    font-size: 13px;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #ffd59f;
-    transition: width 0.3s ease;
-}
-
-.nav a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffd59f;
-}
-
-.nav a:hover::after {
-    width: 100%;
-}
-
-.search-bar {
-    position: relative;
-    display: flex;
-    color : rgb(255, 255, 255);
-}
-
-.search-icon {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgb(117, 96, 71);
-    pointer-events: none;
-}
-
-#search-input {
-    border: 2px solid darkgoldenrod;
-    border-radius: 20px;
-    padding: 10px 15px 10px 40px;
-    width: 200px;
-    flex: 1;
-    background-color: rgba(255, 255, 255, 0.95);
-    font-size: 14px;
-    transition: all 0.3s ease;
-}
-
-#search-input:focus {
-    outline: none;
-    border-color: #ffd59f;
-    box-shadow: 0 0 8px rgba(255, 213, 159, 0.3);
-    background-color: white;
-}
-
-.search-icon-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: SteelBlue; 
-    padding: 0;
-    margin-right: 5px;
-}
-
-.search-icon-button:hover {
-    color: darkgoldenrod; 
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logoa {
-    height: 30px; 
-    width: auto;
-}
-
-.company-namea {
-    margin: 0; 
-    color: burlywood; 
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px; 
-    white-space: nowrap; 
-}
 
 /* Global Styles */
+* {
+    font-family: 'Poppins', sans-serif;
+}
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #f5f5f3;
     color: #1a1a1a;
     line-height: 1.7;
@@ -138,57 +22,10 @@ body {
 }
 
 .faq-header h1 {
-    font-size: 28px;
-    font-weight: 500;
-    color: #1a1a1a;
+   
     margin-bottom: 0.4rem;
 }
 
-.faq-header p {
-    font-size: 15px;
-    color: #666;
-}
-
-/* Footer Styling */
-.main-footer {
-    background-color: linear-gradient(to right, darkslategray, rgb(32, 110, 110));
-    color: darkslategrey;
-    padding: 40px 60px;
-    margin-top: 60px;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.footer-links {
-    display: flex;
-    gap: 50px; 
-}
-
-.footer-links a {
-    color: #294242; 
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px;
-    border-bottom: 1px solid transparent;
-    transition: 0.3s;
-}
-
-.footer-links a:hover {
-    border-bottom: 1px solid LightCyan;
-    color: White;
-}
-
-.copyright {
-    font-size: 12px;
-    color: #294242;
-    margin-top: 10px;
-}
 
 /* FAQ Section Styling */
 .faq-section {
