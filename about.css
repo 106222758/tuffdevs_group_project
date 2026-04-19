@@ -105,7 +105,7 @@
 
 .copyright {
     font-size: 12px;
-    color: CadetBlue;
+    color: white;
     margin-top: 10px;
 }
 
@@ -193,7 +193,7 @@ body {
  
 .role-badge {
     display: inline-block;
-    font-size: 0.68rem;
+    font-size: 0.95rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     background-color: rgba(0, 139, 139, 0.1);
@@ -233,10 +233,10 @@ dd.foreign-quote {
  
 .lang-tag {
     display: block;
-    font-size: 0.65rem;
+    font-size: 0.95rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: darkcyan;
+    color: darkslategray;
     font-weight: 600;
     margin-bottom: 0.3rem;
 }
@@ -250,7 +250,7 @@ dd.foreign-quote {
  
 .translation {
     font-size: 0.8rem;
-    color: #777;
+    color: #000000;
     margin: 0;
 }
  
