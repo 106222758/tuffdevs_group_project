@@ -5,55 +5,229 @@
     <meta name="description" content="The Frequently Asked Questions page for those who want an answer to a question that may have been asked before">
     <meta name="keywords" content="Job Application, Digital Health and Wellness Provider, Form Submission">
     <meta name="Author" content="Jermaine Michael">
-    <link rel="stylesheet" href="faq.css" />
+    <link rel="stylesheet" href="faq.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <title>TuffDev Medical - Frequently Asked Questions </title>
+    <title>TuffDev Medical - Frequently Asked Questions</title>
 </head>
 
-
+<!-- The body of the FAQ page, what shows up to the viewer -->
 <body>
     <header class="topbar">
-    <div class="brand">
-        <img src="images/cat.png" alt="TuffDev Medical Logo" class="logoa" />
-        <p class="company-namea">TuffDev Medical</p>
-    </div>
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="FAQ.html">FAQ</a></li>
-        </ul>
-    </nav>
+        <div class="brand">
+            <img src="images/cat.png" alt="TuffDev Medical Logo" class="logoa"/>
+            <p class="company-namea">TuffDev Medical</p>
+        </div>
+        
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
 
-    <form action="#" method="get" class="search-bar">
-        <label for="search-input" class="visually-hidden">Search our website</label>
+        <form action="#" method="get" class="search-bar">
+            <label for="search-input" class="visually-hidden">Search our website</label>
+            <button type="submit" class="search-icon-button">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" id="search-input" name="q" placeholder="Search..."/>
+        </form>
+    </header>
 
-        <button type="submit" class="search-icon-button">
-            <i class="fas fa-search"></i>
-        </button>
+    <!-- Main content of the FAQ page -->
+    <main>
+        <div class="faq-wrap">
+            <div class="faq-header">
+                <h1>Frequently asked questions</h1>
+                <p>Find answers to common questions about our practice and services.</p>
+            </div>
+            
+            <div id="faq-content">
+            <div class="faq-section">
+            <div class="section-title">About the practice</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Question</th>
+                            <th>Answer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>What are your hours of operation?</td>
+                        <td>We are open Monday to Friday from 8:00 AM to 6:00 PM, and Saturday from 9:00 AM to 1:00 PM. Closed Sundays and public holidays.</td>
+                    </tr>
+                    <tr>
+                        <td>Do you accept new patients?</td>
+                        <td>Yes, we are currently accepting new patients of all ages. Register online through our patient portal or call our reception team.</td>
+                    </tr>
+                    <tr>
+                        <td>Where are you located and is parking available?</td>
+                        <td>We are located at [Your Address Here]. Free on-site parking and wheelchair access are available at the main entrance.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <input type="text" id="search-input" name="q" placeholder="Search...">
-    </form>
-</header>
+            <div class="faq-section">
+            <div class="section-title">Appointments & scheduling</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>How do I book an appointment?</td>
+                    <td>Book online through our patient portal, call reception on [phone number], or visit us in person. Online bookings are available 24/7.</td>
+                </tr>
+                <tr>
+                    <td>What is your cancellation policy?</td>
+                    <td>Please cancel or reschedule at least 24 hours in advance. Late cancellations or no-shows may incur a fee.</td>
+                </tr>
+                <tr>
+                    <td>Do you offer same-day or urgent appointments?</td>
+                    <td>Yes, we reserve slots each day for urgent matters. Call early in the morning to request one. For life-threatening emergencies, call 000.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
 
-    <main
+            <div class="faq-section">
+            <div class="section-title">Insurance & billing</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>What insurance plans do you accept?</td>
+                    <td>We accept Medicare and most major private health funds. We also bulk-bill eligible patients for standard consultations.</td>
+                </tr>
+                <tr>
+                    <td>What payment methods do you accept?</td>
+                    <td>Cash, EFTPOS, Visa, Mastercard, and American Express. Medicare rebates are processed on the spot. Payment is due at the time of your visit.</td>
+                </tr>
+                <tr>
+                    <td>What if I don't have insurance?</td>
+                    <td>You are still welcome. Medicare covers many services, and we offer a self-pay fee schedule. Ask our reception team for details.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
 
+            <div class="faq-section">
+            <div class="section-title">Telehealth</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>   
+                    <td>Do you offer telehealth consultations?</td>
+                    <td>Yes, video and phone consultations are available for follow-ups, prescription renewals, mental health check-ins, and minor illnesses.</td></tr>
+                <tr>
+                    <td>What do I need for a video appointment?</td>
+                    <td>A device with a camera and microphone plus a stable internet connection. We send a secure browser link — no software download needed.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
 
-        <footer>
-            <div class="main-footer">
-                <div class="footer-content">
-                 <div class="footer-links">
-                     <a href="https://jiralinkhere.a.b/" target="_blank">Jira Project</a>
-                     <a href="https://github.com/106222758/tuffdevs_group_project.git" target="_blank">GitHub Repository</a>
-                     <a href="mailto:info@tuffdevsmedical.com">info@tuffdevsmedical.com</a>
-                </div>
-                    <p class="copyright">&copy; 2026 TuffDev Medical. All Rights Reserved.</p>
-                </div>
-            <div main class="main footer">
-        </footer>
+            <div class="faq-section">
+            <div class="section-title">Medical records & privacy</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>How do I request my medical records?</td>
+                    <td>Complete an authorisation form available at reception or on our website. Records are processed within 5–10 business days. A small fee may apply.</td>
+                </tr>
+                <tr>
+                    <td>How is my personal health information protected?</td>
+                    <td>We comply with the Australian Privacy Act. Your information is stored securely and only shared with providers involved in your care, or as required by law.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
 
-    </body>
-    
+            <div class="faq-section">
+            <div class="section-title">Prescriptions & referrals</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Can I get a prescription renewed without an appointment?</td>
+                    <td>Usually a short consultation is required. In some cases a brief telehealth call is sufficient. Please contact us to discuss your situation.</td>
+                </tr>
+                <tr>
+                    <td>How do I get a specialist referral?</td>
+                    <td>Referrals are issued by your GP during a consultation. Standard referrals are valid for 12 months; indefinite referrals cover ongoing specialist care.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div class="faq-section">
+            <div class="section-title">Emergencies</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Question</th>
+                        <th>Answer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>What should I do in a medical emergency?</td>
+                    <td>Call 000 immediately or go to your nearest emergency department. Do not wait for a GP appointment in life-threatening situations.</td>
+                </tr>
+                <tr>
+                    <td>Do you have an after-hours service?</td>
+                    <td>Contact the National Home Doctor Service on 13 74 25, or call Healthdirect on 1800 022 222 for 24/7 nurse advice.</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+        </div>
+
+        <div class="no-results" id="no-results">
+            No questions match your search. Try different keywords.
+        </div>
+    </main>
+
+    <footer class="main-footer">
+       <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://jiralinkhere.a.b/" target="_blank">Jira Project</a>
+                <a href="https://github.com/106222758/tuffdevs_group_project.git" target="_blank">GitHub Repository</a>
+                <a href="mailto:info@tuffdevsmedical.com">info@tuffdevsmedical.com</a>
+            </div>
+            <p class="copyright">&copy; 2026 TuffDev Medical. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
