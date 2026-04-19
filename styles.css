@@ -2,11 +2,11 @@
 last modified 17/4/2026 9:14 AM by sheng yang
 
 */
-*{
+*{ /* universal selector for the font */
     font-family: 'Poppins', sans-serif;
 }
 
-h1 {
+h1 { /* h1 styling for every page */
     color: darkgoldenrod;
     font-family: 'Poppins', sans-serif;
 }
@@ -23,12 +23,12 @@ main {
     background-color: #f4f6fb;
 }
 
-.topbar {
+.topbar { /* nav bar styling */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    background-color: darkslategray; 
+    background-image: linear-gradient(to right, darkslategray, rgb(32, 110, 110));
     border-bottom: 2px solid darkcyan;
 }
 
@@ -94,7 +94,7 @@ main {
 }
 
 .main-footer { /* Footer content */
-    background-color: darkslategray; 
+    background-image: linear-gradient(to right, darkslategray, rgb(32, 110, 110));
     color: White;
     padding: 40px 60px;
     margin-top: 60px; 
@@ -149,4 +149,18 @@ main {
     border-radius: 20px;
     padding: 10px 15px 10px 40px;
     width: 200px;
+    flex: 1;
+}
+
+.search-icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: SteelBlue; 
+    padding: 0;
+    margin-right: 5px;
+}
+
+.search-icon-button:hover {
+    color: DarkSlateGray; 
 }
